@@ -91,6 +91,7 @@
     "node": ">=18"
   },
   "publishConfig": {
-    "directory": "."
+    "directory": ".",
+    "access": "public"
   }
 }
