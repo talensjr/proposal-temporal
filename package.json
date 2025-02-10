@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "proposal-temporal",
   "version": "1.0.0",
   "description": "Provides standard objects and functions for working with dates and times.",
