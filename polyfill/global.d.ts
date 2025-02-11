@@ -1,5 +1,5 @@
-import { type Temporal } from './index';
+import { Temporal as TemporalNS } from './index';
 
 declare global {
-  const Temporal: Temporal;
+  const Temporal: typeof TemporalNS;
 }

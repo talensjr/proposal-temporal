@@ -1,4 +1,4 @@
-/// <reference path="global.d.ts" />
+import './global';
 
 export namespace Temporal {
   export type ComparisonResult = -1 | 0 | 1;

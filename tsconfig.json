@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "erasableSyntaxOnly": true,
+    "libReplacement": false
+  },
+  "exclude": ["node_modules"]
+}
