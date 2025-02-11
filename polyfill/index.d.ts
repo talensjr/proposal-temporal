@@ -1,3 +1,5 @@
+/// <reference path="global.d.ts" />
+
 export namespace Temporal {
   export type ComparisonResult = -1 | 0 | 1;
   export type RoundingMode =
