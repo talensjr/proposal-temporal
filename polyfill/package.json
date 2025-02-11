@@ -1,6 +1,6 @@
 {
   "name": "@talensjr/proposal-temporal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Experimental polyfill for the TC39 Temporal proposal",
   "type": "commonjs",
   "main": "./script.js",
@@ -64,7 +64,8 @@
   "homepage": "https://github.com/talensjr/temporal-polyfill#readme",
   "files": [
     "script.js",
-    "index.d.ts"
+    "index.d.ts",
+    "global.d.ts"
   ],
   "dependencies": {
     "@rollup/plugin-terser": "^0.4.4",
