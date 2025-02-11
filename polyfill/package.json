@@ -1,11 +1,16 @@
 {
-  "name": "proposal-temporal",
-  "version": "0.9.0",
+  "name": "@talensjr/proposal-temporal",
+  "version": "0.1.0",
   "description": "Experimental polyfill for the TC39 Temporal proposal",
   "type": "commonjs",
-  "main": "dist/index.js",
-  "browser": "dist/index.umd.js",
-  "types": "index.d.ts",
+  "main": "./script.js",
+  "browser": "./script.js",
+  "exports": {
+    ".": {
+      "default": "./script.js"
+    }
+  },
+  "types": "./script.d.ts",
   "scripts": {
     "test": "node --loader ./test/resolve.source.mjs ./test/all.mjs",
     "test-cookbook": "npm run build && TEST=all npm run test-cookbook-one",
@@ -19,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tc39/proposal-temporal.git",
+    "url": "git+https://github.com/talensjr/temporal-polyfill.git",
     "directory": "polyfill"
   },
   "keywords": [
@@ -37,7 +42,7 @@
     "TimeZone",
     "YearMonth"
   ],
-  "author": "Philipp Dunkel <pip@pipobscure.com>",
+  "author": "Talen Jr <talen@example.com>",
   "contributors": [
     "Daniel Ehrenberg",
     "Jason Williams",
@@ -49,19 +54,22 @@
     "Philipp Dunkel",
     "Sasha Pierson",
     "Shane F. Carr",
-    "Ujjwal Sharma"
+    "Ujjwal Sharma",
+    "Talen Jr <talen@example.com>"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tc39/proposal-temporal/issues"
+    "url": "https://github.com/talensjr/temporal-polyfill/issues"
   },
-  "homepage": "https://tc39.es/proposal-temporal/docs/index.html",
+  "homepage": "https://github.com/talensjr/temporal-polyfill#readme",
   "files": [
-    "index.d.ts",
-    "dist",
-    "lib"
+    "script.js",
+    "script.d.ts",
+    "global.d.ts"
   ],
   "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@talensjr/proposal-temporal": "link:",
     "big-integer": "^1.6.51",
     "call-bind": "^1.0.2",
     "es-abstract": "^1.21.2"
@@ -83,5 +91,12 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "directory": ".",
+    "access": "public"
+  },
+  "pnpm": {
+    "overrides": {}
   }
 }

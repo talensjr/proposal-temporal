@@ -1,3 +1,5 @@
+import './global';
+
 export namespace Temporal {
   export type ComparisonResult = -1 | 0 | 1;
   export type RoundingMode =
