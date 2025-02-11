@@ -1,6 +1,6 @@
 {
   "name": "@talensjr/proposal-temporal",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Experimental polyfill for the TC39 Temporal proposal",
   "type": "commonjs",
   "main": "./script.js",
@@ -10,7 +10,7 @@
       "default": "./script.js"
     }
   },
-  "types": "index.d.ts",
+  "types": "./script.d.ts",
   "scripts": {
     "test": "node --loader ./test/resolve.source.mjs ./test/all.mjs",
     "test-cookbook": "npm run build && TEST=all npm run test-cookbook-one",
@@ -64,11 +64,12 @@
   "homepage": "https://github.com/talensjr/temporal-polyfill#readme",
   "files": [
     "script.js",
-    "index.d.ts",
+    "script.d.ts",
     "global.d.ts"
   ],
   "dependencies": {
     "@rollup/plugin-terser": "^0.4.4",
+    "@talensjr/proposal-temporal": "link:",
     "big-integer": "^1.6.51",
     "call-bind": "^1.0.2",
     "es-abstract": "^1.21.2"
@@ -94,5 +95,8 @@
   "publishConfig": {
     "directory": ".",
     "access": "public"
+  },
+  "pnpm": {
+    "overrides": {}
   }
 }

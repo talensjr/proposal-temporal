@@ -6,7 +6,9 @@
     "node": ">=12.16.0"
   },
   "main": "polyfill/lib/index.mjs",
+  "types": "polyfill/script.d.ts",
   "devDependencies": {
+    "@arethetypeswrong/cli": "0.17.3",
     "@tc39/ecma262-biblio": "=2.1.2770",
     "@tc39/ecma402-biblio": "=2.1.1110",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
@@ -17,7 +19,7 @@
     "eslint-plugin-prettier": "^5.1.2",
     "mkdirp": "^3.0.1",
     "prettier": "^3.1.1",
-   "typescript": "5.8.0-beta"
+    "typescript": "5.8.0-beta"
   },
   "scripts": {
     "test": "cd polyfill && npm install && npm test && npm run test-cookbook && npm run test262",
