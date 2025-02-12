@@ -1,7 +1,7 @@
 {
   "name": "@talensjr/proposal-temporal",
-  "version": "0.1.0",
-  "description": "Experimental polyfill for the TC39 Temporal proposal",
+  "version": "0.1.1",
+  "description": "A installable fork of the official polyfill for the TC39 Temporal proposal",
   "type": "commonjs",
   "main": "./script.js",
   "browser": "./script.js",
@@ -42,7 +42,7 @@
     "TimeZone",
     "YearMonth"
   ],
-  "author": "Talen Jr <talen@example.com>",
+  "author": "Talensjr <talensjr@gmail.com>",
   "contributors": [
     "Daniel Ehrenberg",
     "Jason Williams",
@@ -55,7 +55,7 @@
     "Sasha Pierson",
     "Shane F. Carr",
     "Ujjwal Sharma",
-    "Talen Jr <talen@example.com>"
+    "Talensjr <talensjr@gmail.com>"
   ],
   "license": "ISC",
   "bugs": {
